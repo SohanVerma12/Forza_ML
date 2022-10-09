@@ -6,5 +6,7 @@ game_area = {"left": -30, "top": 0, "width": 100, "height": 100}    # Game area
 def collect_frames():
     gamecap = mss.grab(game_area)
 
+    cv2.imwrite("gamecap.jpg", gamecap)
+
 if __name__ == "__main__":
     pass    # Main
